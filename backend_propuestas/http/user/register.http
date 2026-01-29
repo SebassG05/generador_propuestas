@@ -1,0 +1,17 @@
+### Variables
+@baseURL = http://localhost:3000/api
+
+###############################################
+# 1. REGISTRAR NUEVO USUARIO
+###############################################
+
+### Registrar usuario
+POST {{baseURL}}/users/register
+Content-Type: application/json
+
+{
+  "nombre": "Sebas",
+  "email": "sebastiangandiagutierrez@gmail.com",
+  "password": "Sebas2019",
+  "password2": "Sebas2019"
+}

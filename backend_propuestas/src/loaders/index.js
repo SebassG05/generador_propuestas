@@ -1,15 +1,24 @@
-// loaders/index.js
-// Inicializa middlewares, rutas, y otros módulos
+import dotenv from 'dotenv';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import express from 'express';
+import connectDB from '../../config/db.js';
+import userRoutes from '../routes/userRoutes.js';
 
-const dotenv = require('dotenv');
-const connectDB = require('../../config/db');
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-module.exports = (app) => {
+export default (app) => {
   // Cargar variables de entorno
-  dotenv.config({ path: require('path').resolve(__dirname, '../../.env') });
+  dotenv.config({ path: path.resolve(__dirname, '../../.env') });
 
   // Conectar a la base de datos
   connectDB();
 
-  // Aquí se cargarán middlewares, rutas, etc.
+  // Middlewares básicos
+  app.use(express.json());
+  app.use(express.urlencoded({ extended: false }));
+
+  // Rutas
+  app.use('/api/users', userRoutes);
 };

@@ -1,12 +1,9 @@
-// app.js
-// Punto de entrada principal de la aplicación
-
-const express = require('express');
-const loaders = require('./loaders');
+import express from 'express';
+import loaders from './loaders/index.js';
 
 const app = express();
 
 // Cargar middlewares, rutas, etc.
 loaders(app);
 
-module.exports = app;
+export default app;
