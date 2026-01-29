@@ -68,3 +68,19 @@ export const register = async (req, res) => {
     res.status(500).json({ message: 'Error en el servidor', error });
   }
 };
+
+// Logout: simplemente indica al cliente que borre el token
+export const logout = (req, res) => {
+  const authHeader = req.headers['authorization'];
+  if (!authHeader || !authHeader.startsWith('Bearer ')) {
+    return res.status(401).json({ message: 'Token no proporcionado' });
+  }
+  const token = authHeader.split(' ')[1];
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET || 'secret');
+    // Aquí podrías guardar un log, invalidar el token, etc.
+    res.status(200).json({ message: `Logout exitoso para usuario ${decoded.id}. El token debe ser eliminado del cliente.` });
+  } catch (err) {
+    res.status(401).json({ message: 'Token inválido o expirado' });
+  }
+};
