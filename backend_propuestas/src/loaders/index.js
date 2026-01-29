@@ -3,7 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import express from 'express';
 import connectDB from '../../config/db.js';
-import userRoutes from '../routes/userRoutes.js';
+import mainRoutes from '../routes/index.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -20,5 +20,5 @@ export default (app) => {
   app.use(express.urlencoded({ extended: false }));
 
   // Rutas
-  app.use('/api/users', userRoutes);
+  app.use('/api', mainRoutes);
 };
