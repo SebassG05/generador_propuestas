@@ -237,7 +237,7 @@ const AuthModal = ({ open, onClose }) => {
                       } else {
                         setUserLogin(data.user, data.token);
                         setRegisterSuccess('');
-                        showToast('¡Registro exitoso! Ya puedes disfrutar del campus.', 'success');
+                        showToast('¡Registro exitoso! Ya puedes disfrutar del desarrollador de propuestas.', 'success');
                         setIsVisible(false);
                         onClose && onClose();
                         setTimeout(() => {

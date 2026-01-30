@@ -41,7 +41,7 @@ const HeroSection = () => {
           className="text-center mb-8"
         >
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-white via-[#a1db87] to-white bg-clip-text text-transparent mb-3">
-            <span className="font-[Rondana]">CAMPUS</span>
+            <span className="font-[Rondana]">Desarrollador de Propuestas</span>
           </h1>
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -55,7 +55,7 @@ const HeroSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-[#a1db87] to-emerald-400 rounded-lg blur opacity-30 group-hover:opacity-50 transition-opacity"></div>
                 <div className="relative bg-black/50 backdrop-blur-sm border border-[#a1db87]/40 rounded-lg px-6 py-2">
                   <span className="text-lg font-bold text-[#a1db87] tracking-[0.2em]">
-                    E-LEARNING
+                    EVENOR-TECH
                   </span>
                 </div>
               </div>
@@ -84,7 +84,7 @@ const HeroSection = () => {
           <div className="inline-flex items-center space-x-2 px-4 py-2 bg-[#2a2a2a] border border-[#a1db87]/30 rounded-full">
             <TrendingUp className="w-4 h-4 text-[#a1db87]" />
             <span className="text-xs sm:text-sm font-semibold text-[#a1db87]">
-              Ventajas del Campus
+              Ventajas del desarrollador de propuestas
             </span>
           </div>
         </motion.div>
@@ -108,7 +108,7 @@ const HeroSection = () => {
                   transition={{ duration: 0.5, delay: 0.1 }}
                   className="font-[Rondana] text-2xl sm:text-3xl font-bold text-white mb-3"
                 >
-                  ¿Qué puedes esperar de los cursos?
+                  ¿Qué puedes esperar del Desarrollador de Propuestas?
                 </motion.h2>
               </div>
 
@@ -122,24 +122,24 @@ const HeroSection = () => {
                 className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6"
               >
                 <motion.div whileHover={{ scale: 1.04, y: -4 }} className="bg-[#23272f] rounded-xl shadow-lg p-6 flex flex-col items-center text-center border border-[#a1db87]/20 transition-all duration-300">
-                  <Clock className="w-8 h-8 text-[#a1db87] mb-2" />
-                  <h3 className="font-bold text-lg text-white mb-1">Acceso 24/7 durante 7 semanas</h3>
-                  <p className="text-gray-400 text-sm">(11 marzo - 29 abril 2026)</p>
+                  <Sparkles className="w-8 h-8 text-[#a1db87] mb-2" />
+                  <h3 className="font-bold text-lg text-white mb-1">Especialización en propuestas</h3>
+                  <p className="text-gray-400 text-sm">Aprende a crear propuestas ganadoras para licitaciones y proyectos.</p>
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.04, y: -4 }} className="bg-[#23272f] rounded-xl shadow-lg p-6 flex flex-col items-center text-center border border-[#a1db87]/20 transition-all duration-300">
-                  <Video className="w-8 h-8 text-[#a1db87] mb-2" />
-                  <h3 className="font-bold text-lg text-white mb-1">Vídeos, lecturas y material técnico</h3>
-                  <p className="text-gray-400 text-sm">Todo descargable y disponible online</p>
+                  <FileText className="w-8 h-8 text-[#a1db87] mb-2" />
+                  <h3 className="font-bold text-lg text-white mb-1">Plantillas y recursos exclusivos</h3>
+                  <p className="text-gray-400 text-sm">Acceso a modelos, ejemplos y herramientas listas para usar.</p>
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.04, y: -4 }} className="bg-[#23272f] rounded-xl shadow-lg p-6 flex flex-col items-center text-center border border-[#a1db87]/20 transition-all duration-300">
-                  <ListChecks className="w-8 h-8 text-[#a1db87] mb-2" />
-                  <h3 className="font-bold text-lg text-white mb-1">Ejercicios prácticos + tests</h3>
-                  <p className="text-gray-400 text-sm">Autoevaluación por módulo y guía paso a paso</p>
+                  <Euro className="w-8 h-8 text-[#a1db87] mb-2" />
+                  <h3 className="font-bold text-lg text-white mb-1">Enfoque en resultados para la excelencia</h3>
+                  <p className="text-gray-400 text-sm">Optimiza tu tiempo y aumenta tus posibilidades de éxito profesional.</p>
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.04, y: -4 }} className="bg-[#23272f] rounded-xl shadow-lg p-6 flex flex-col items-center text-center border border-[#a1db87]/20 transition-all duration-300">
-                  <Award className="w-8 h-8 text-[#a1db87] mb-2" />
-                  <h3 className="font-bold text-lg text-white mb-1">Certificado profesional autorizado</h3>
-                  <p className="text-gray-400 text-sm">Evaluación final y diploma Evenor-Tech</p>
+                  <Building2 className="w-8 h-8 text-[#a1db87] mb-2" />
+                  <h3 className="font-bold text-lg text-white mb-1">Red de expertos y soporte</h3>
+                  <p className="text-gray-400 text-sm">Acceso a comunidad, mentoría y soporte especializado en propuestas.</p>
                 </motion.div>
               </motion.div>
             </motion.div>
@@ -231,24 +231,24 @@ import { AnimatePresence, motion as m } from 'framer-motion';
 const FAQSection = ({ animating, setAnimating, navigate }) => {
   const faqs = [
     {
-      question: '¿Cómo me registro en la plataforma?',
-      answer: 'Haz clic en “Regístrate” en la parte superior derecha, completa el formulario y confirma tu correo electrónico para activar tu cuenta.'
+      question: '¿Qué es el Desarrollador de Propuestas?',
+      answer: 'Es una herramienta asistida por IA que te permite generar documentos de propuestas profesionales rellenando un formulario guiado. Al finalizar, obtienes un documento bien redactado y adaptado a tus necesidades.'
     },
     {
-      question: '¿Puedo acceder a los cursos desde cualquier dispositivo?',
-      answer: 'Sí, puedes acceder desde ordenador, tablet o móvil, solo necesitas conexión a internet.'
+      question: '¿Cómo funciona el proceso?',
+      answer: 'Solo tienes que responder a las preguntas del formulario paso a paso. La IA recopila tus respuestas y genera automáticamente una propuesta estructurada y profesional.'
     },
     {
-      question: '¿Cuánto tiempo tengo para completar un curso?',
-      answer: 'Tienes acceso 24/7 durante el periodo indicado en la descripción del curso, normalmente 7 semanas.'
+      question: '¿Qué tipo de propuestas puedo crear?',
+      answer: 'Puedes crear propuestas técnicas, económicas, comerciales o de subvenciones, adaptadas a licitaciones, concursos o proyectos empresariales.'
     },
     {
-      question: '¿Recibo un certificado al finalizar?',
-      answer: 'Sí, al superar todos los módulos y tests recibirás un diploma profesional de Evenor-Tech.'
+      question: '¿Puedo personalizar el resultado final?',
+      answer: 'Sí, puedes revisar, editar y descargar el documento generado antes de enviarlo o presentarlo a tu cliente o entidad.'
     },
     {
-      question: '¿Qué hago si tengo problemas técnicos?',
-      answer: 'Puedes contactar con soporte desde la sección de ayuda o escribiendo a info@evenor-tech.com.'
+      question: '¿Qué ventajas tiene usar IA para mis propuestas?',
+      answer: 'Ahorra tiempo, mejora la calidad de redacción, asegura coherencia y formato profesional, y te permite centrarte en el contenido clave de tu proyecto.'
     },
   ];
   const [openIdx, setOpenIdx] = useState(null);

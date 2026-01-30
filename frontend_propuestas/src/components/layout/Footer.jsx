@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex-1 flex flex-col items-center md:items-start mb-6 md:mb-0 text-center md:text-leftre">
           <div className="flex items-center gap-2 mb-2">
             <Globe className="w-7 h-7 text-[#a1db87]" />
-            <span className="font-bold text-xl text-white tracking-wide">CAMPUS</span>
+            <span className="font-bold text-xl text-white tracking-wide">Desarrollador de Propuestas</span>
           </div>
           <p className="text-gray-400 max-w-xs text-center md:text-left text-sm">Formando profesionales con tecnología y pasión. Plataforma e-learning moderna y flexible.</p>
         </div>
@@ -67,7 +67,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="mt-8 border-t border-[#a1db87]/10 pt-4 text-xs text-gray-500 flex flex-col items-center">
-        <span className="text-center">© 2026 CAMPUS. Todos los derechos reservados.</span>
+        <span className="text-center">© 2026 Desarrollador de propuestas. Todos los derechos reservados.</span>
         <div className="flex flex-row gap-4 justify-center mt-2">
           <Link to="/politica-cookies" className="hover:text-[#a1db87] transition-colors">Cookies</Link>
           <Link to="/politica-cookies" className="hover:text-[#a1db87] transition-colors">Política de Cookies</Link>

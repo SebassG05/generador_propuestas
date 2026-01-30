@@ -8,10 +8,8 @@ import { useToast } from '../../context/ToastContext.jsx';
 import MobileMenu from './MobileMenu';
 const navLinks = [
   { to: '/', label: 'Inicio' },
-  { to: '/cursos', label: 'Cursos' },
-  { to: '/sobre', label: 'Sobre Nosotros' },
+  { to: '/desarrollador-de-propuestas', label: 'Desarrollador de Propuestas' },
   { to: '/contacto', label: 'Contacto' },
-  { to: '/reseñas', label: 'Reseñas' },
 ];
 
 const Header = () => {
@@ -36,8 +34,7 @@ const Header = () => {
   }, [userMenuOpen]);
   const menuItems = [
     { name: 'Inicio', path: '/' },
-    { name: 'Cursos', path: '/cursos' },
-    { name: 'Sobre Nosotros', path: '/sobre' },
+    { name: 'Desarrollador de Propuestas', path: '/desarrollador-de-propuestas' },
     { name: 'Contacto', path: '/contacto' },
     { name: 'Iniciar sesión', path: '/login' },
     { name: 'Regístrate', path: '/registro' },
@@ -49,7 +46,7 @@ const Header = () => {
           <nav className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 text-2xl font-extrabold text-green-300 tracking-tight group">
-            <span className="font-[Rondana] bg-gradient-to-r from-green-300 via-green-500 to-green-700 bg-clip-text text-transparent group-hover:from-green-400 group-hover:to-green-300 transition-all duration-500">Evenor Tech - Campus</span>
+            <span className="font-[Rondana] bg-gradient-to-r from-green-300 via-green-500 to-green-700 bg-clip-text text-transparent group-hover:from-green-400 group-hover:to-green-300 transition-all duration-500">Desarrollador de Propuestas</span>
           </Link>
 
           {/* Desktop Nav */}
