@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex-1 flex flex-col items-center md:items-start mb-6 md:mb-0 text-center md:text-leftre">
           <div className="flex items-center gap-2 mb-2">
             <Globe className="w-7 h-7 text-[#a1db87]" />
-            <span className="font-bold text-xl text-white tracking-wide">Desarrollador de Propuestas</span>
+            <span className="font-bold text-base text-white tracking-wide">Desarrollador de Propuestas</span>
           </div>
           <p className="text-gray-400 max-w-xs text-center md:text-left text-sm">Formando profesionales con tecnología y pasión. Plataforma e-learning moderna y flexible.</p>
         </div>

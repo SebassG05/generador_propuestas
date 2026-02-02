@@ -170,20 +170,20 @@ const HeroSection = () => {
             <ol className="relative mx-auto min-h-[520px] max-w-4xl w-full">
               {[{
                 icon: <ArrowRight className='w-6 h-6 text-[#a1db87]' />,
-                title: 'Inicia sesión o regístrate',
-                desc: 'Crea tu cuenta o accede con tus credenciales para comenzar tu formación.'
+                title: 'Accede al Desarrollador de Propuestas',
+                desc: 'Entra en la plataforma y selecciona la opción para crear una nueva propuesta.'
               }, {
                 icon: <FileText className='w-6 h-6 text-[#a1db87]' />,
-                title: 'Aplica al curso de tu interés',
-                desc: 'Explora el catálogo, selecciona el curso y completa tu inscripción en pocos pasos.'
+                title: 'Rellena el formulario guiado',
+                desc: 'Responde paso a paso a las preguntas sobre tu proyecto, necesidades y requisitos.'
               }, {
                 icon: <ListChecks className='w-6 h-6 text-[#a1db87]' />,
-                title: 'Supera los temarios y tests',
-                desc: 'Avanza a tu ritmo, estudia los módulos y aprueba los tests de autoevaluación.'
+                title: 'Revisa y personaliza tu propuesta',
+                desc: 'La IA genera un borrador profesional que puedes revisar, editar y adaptar a tu caso.'
               }, {
                 icon: <Award className='w-6 h-6 text-[#a1db87]' />,
-                title: 'Obtén tu certificado',
-                desc: 'Recibe tu diploma profesional al finalizar y aprobar el curso, listo para tu CV.'
+                title: 'Descarga tu documento final',
+                desc: 'Obtén tu propuesta lista para enviar, con formato y redacción profesional.'
               }].map((step, idx) => (
                 <motion.li
                   key={idx}
