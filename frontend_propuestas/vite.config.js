@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:3007', // Puerto backend Express
+        target: 'http://localhost:3000', // Puerto backend Express
         changeOrigin: true,
       },
     },
